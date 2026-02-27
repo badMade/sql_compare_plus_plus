@@ -87,7 +87,7 @@ class SQLCompareGUI:
         self.last_result = None  # cache for report generation
 
     def _toggle_join_options(self):
-``        """Enable/disable dependent join flags based on the main join toggle."""
+        """Enable/disable dependent join flags based on the main join toggle."""
         state = ['!disabled'] if self.enable_join.get() else ['disabled']
         self.chk_full.state(state)
         self.chk_left.state(state)
