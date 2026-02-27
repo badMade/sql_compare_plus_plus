@@ -3,6 +3,7 @@
 Use canonical mode in PR validation to ensure semantically-equivalent SQL passes, while catching meaningful changes.
 
 ## GitHub Actions
+
 ```yaml
 name: SQL Compare
 on: [pull_request]
@@ -29,6 +30,7 @@ jobs:
 ```
 
 ## Azure Pipelines
+
 ```yaml
 pool: { vmImage: 'windows-latest' }
 steps:
