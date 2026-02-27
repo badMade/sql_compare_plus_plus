@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: sql-compare
+        name: SQL canonical comparison (blocking)
+        entry: python sql_compare.py examples/A.sql examples/B.sql --mode canonical --join-reorder
+        language: system
+        pass_filenames: false
